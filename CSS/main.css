@@ -1,0 +1,591 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #F1F1F3;
+  font-family: Be Vietnam Pro;
+}
+.container {
+  width: calc(100% - 150px);
+  margin: auto;
+}
+
+header .row {
+  background-color: white;
+  padding: 0px 30px;
+  height: 50px;
+  display: flex;
+   justify-content: space-between; 
+  flex-wrap: nowrap;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+header {
+  
+  position: sticky;
+  top: 0px;
+  z-index: 9;
+}
+header .logo {
+  display: flex;
+  align-items: center;
+}
+header .logo .image {
+  background-color: #ff9500;
+  padding: 6px;
+  border-radius: 6px;
+}
+header .logo img {
+  width: 25px;
+}
+header .navbar {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+header .navbar ul a {
+  color: rgba(0, 0, 0, 0.615);
+  font-size: 17px;
+}
+.active {
+  background-color: #f1f1f3;
+  padding: 13px 15px;
+}
+.nonactive {
+  display: flex;
+  gap: 30px;
+}
+.auth {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: nowrap;
+}
+
+header .auth a {
+  padding: 7px 20px;
+}
+
+header .register a {
+  color: white;
+}
+.register {
+  background-color: #ff9500;
+  padding: 13px 7px;
+  border-radius: 7px;
+}
+header .burger{
+  display: flex;
+  align-items: center;
+  display: none;
+}
+main .first .container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin-top: 100px;
+}
+main .top{
+  margin-bottom: 70px;
+}
+main .top img {
+  width: 25px;
+}
+.unlock {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+.unlock .bottom{
+  background-color: white;
+  padding: 0px 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.unlock img {
+  width: 40px;
+}
+.unlock p {
+  font-size: 40px;
+}
+.unlock .u {
+  color: #ff9500;
+}
+.mid .p1 {
+  font-size: 30px;
+}
+.mid .p2 {
+  font-size: 20px;
+  margin-left: 60px;
+  margin-top: 8px;
+}
+.mid{
+  margin-left: 35px;
+}
+.choises {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px; 
+  gap: 30px;
+}
+.choises .view{
+  background-color: white;
+  padding: 10px 15px;
+}
+.choises .explore a {
+  background-color: #ff9500;
+  padding: 10px 15px;
+  border-radius: 8px;
+  color: white; 
+}
+@media screen and (max-width:890px){
+  header .navbar{
+    display: none;
+  }
+  header .burger{
+    display: inline-flex;
+  }
+}
+.second .container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  margin-top: 100px; 
+  overflow: auto;
+  gap: 10px;
+}
+.second .container a{
+  background-color: white;
+}
+.second .container img{
+   width: 130px; 
+}
+.third .container{
+  margin-top: 100px;
+}
+.fourth .benefits-top{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.fourth .benefits-top .viewall{
+  display: flex;
+  align-self: flex-end;
+  margin-right: 90px;
+  background-color: white;
+  padding: 10px 10px;
+  flex-wrap: nowrap;
+} 
+.fourth .benefits-top .dis{
+  width: calc(100% - 500px);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+ }
+ .fourth .benefits-bot{
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+ }
+ .fourth .benefits-bot .benefit{
+  width: 32%;
+  background-color: white;
+  padding: 15px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+ }
+ .fourth .benefits-bot .benefit .h1{
+  font-size: 35px;
+  align-self: flex-end;
+ }
+ .fourth .benefits-bot .benefit .h1-dis{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+ }
+ .fourth .benefits-bot .benefit .arrow{
+  align-self: flex-end;
+ }
+ .fifth .courses-top{
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.fifth .courses-top .viewall{
+  display: flex;
+  align-self: flex-end;
+  margin-right: 90px;
+  background-color: white;
+  padding: 10px 10px;
+  flex-wrap: nowrap;
+} 
+.fifth .courses-top .dis{
+  width: calc(100% - 500px);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+ }
+ .fifth .courses-bot{
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+ }
+ .fifth .courses-bot .course .course-dis p{
+  font-size: 11px;
+ }
+ .fifth .courses-bot .course{
+  width: 47%;
+  background-color: white;
+  padding: 15px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+ }
+ .fifth .courses-bot .course img{
+  width: 550px;
+ }
+ .fifth .courses-bot .course .course-img{
+  align-self: center;
+ }
+ .fifth .courses-bot .course .prop{
+  margin-left: 50px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+ }
+ .fifth .courses-bot .course .prop h3{
+  font-size: 13px;
+ }
+ .fifth .courses-bot .course .prop p{
+  font-size: 11px;
+ }
+ .fifth .courses-bot .course .prop .teacher{
+  margin-left: 175px;
+  font-size: 16px;
+ }
+ .fifth .courses-bot .course .course-dis{
+  width: 85%;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-wrap: wrap;
+ }
+ .fifth .courses-bot .course .git{
+  align-self: center;
+  background-color: #F1F1F3;
+  padding: 10px 100px;
+  display: flex;
+  flex-wrap: nowrap;
+ }
+ .sixth .testimonials-top{
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.sixth .testimonials-top .viewall{
+  display: flex;
+  align-self: flex-end;
+  margin-right: 90px;
+  background-color: white;
+  padding: 10px 10px;
+  flex-wrap: nowrap;
+} 
+.sixth .testimonials-top .dis{
+  width: calc(100% - 450px);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+ }
+ .sixth .testimonials-bot{
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+ }
+ .sixth .testimonials-bot .testimonials-dis{
+  background-color: white;
+  width: 48%;
+  padding: 30px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+ }
+ .sixth .testimonials-bot .testimonials-dis .test{
+  display: flex;
+  align-items: center;
+  gap: 100px;
+ }
+ .sixth .testimonials-bot .testimonials-dis .test .person{
+  width: 300px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+ }
+ .sixth .testimonials-bot .testimonials-dis .test .read{
+  background-color:#F1F1F3;
+  padding: 10px 10px;
+ }
+ .seventh .pricing-top{
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.seventh .pricing-top .dis{
+  width: calc(100% - 450px);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+ }
+ .seventh .pricing-top .pay{
+  height: 50px;
+  width: 170px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: white;
+  justify-content: center;
+  margin-right: 40px;
+  margin-top: 40px;
+ }
+ .seventh .pricing-top .pay .month{
+  background-color:#ff9500;
+  padding: 10px 15px;
+  border-radius: 8px;
+  color: white;
+ }
+ .seventh .pricing-bot{
+  margin-top: 100px;
+  background-color: white;
+  padding: 50px 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+ }
+ .seventh .pricing-bot .plan{
+  background-color:#F1F1F3 ;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 48%;
+  padding: 40px 30px;
+  gap: 50px;
+ }
+ .seventh .pricing-bot .plan .title{
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  gap: 30px;
+ }
+ .seventh .pricing-bot .plan .title .name{
+  background-color: #FFEACC;
+  padding: 10px 180px;
+ }
+ .seventh .pricing-bot .plan .title .price{
+  display: flex;
+  align-self: center;
+ }
+ .seventh .pricing-bot .plan .title .price .dollar{
+  font-size: 45px;
+ }
+ .seventh .pricing-bot .plan .title .price .time{
+  margin-top: 30px;
+  color: rgba(0, 0, 0, 0.738);
+ }
+ .seventh .pricing-bot .plan .features{
+  background-color: white;
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  gap: 30px;
+  padding: 30px 60px;
+ }
+ .seventh .pricing-bot .plan .features .available{
+  align-self: center;
+ }
+ .seventh .pricing-bot .plan .get{
+  display: flex;
+  align-self: center;
+  background-color: #ff9500;
+  padding: 20px 170px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+ }
+ .seventh .pricing-bot .plan .get a{
+  color: white;
+ }
+ .seventh .pricing-bot .plan .features .total{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+ }
+ .seventh .pricing-bot .plan .features .total .feature{
+  display: flex;
+  gap: 8px;
+  border: 1px solid #F1F1F3;
+  padding: 10px 10px;
+  
+ }
+ .seventh .pricing-bot .plan .features .total .feature p{
+  color: gray;
+ }
+ footer{
+  margin-top: 70px;
+  background-color: white;
+  padding: 70px 10px;
+ }
+ footer .container{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+ }
+ footer .container .top{
+  display: flex;
+  flex-wrap: wrap;
+ }
+ footer .footer-start{
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  flex-wrap: wrap;
+ }
+ footer .footer-start .status{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+ }
+ footer .footer-start .logo {
+  background-color: #ff9500;
+  padding: 6px;
+  border-radius: 6px;
+  width: 45px;
+}
+footer .footer-start .status .email{
+  display: flex;
+  gap: 5px;
+}
+footer .footer-end{
+  display: flex;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+footer .footer-end .home{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer .footer-end .about{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer .footer-end .social{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer .footer-end .social .icons{
+  display: flex;
+  gap: 10px;
+}
+footer a{
+  color: rgba(0, 0, 0, 0.526);
+}
+footer .bottom{
+  color: rgba(0, 0, 0, 0.526);
+  align-self: center;
+  margin-top: 100px;
+  flex-wrap: wrap;
+}
+ @media screen and (max-width:1400px){
+  .container{
+    width: 100%;
+  }
+  .second .container img{
+    width: 120px; 
+ }
+ .third .container img{
+  width: 100%;
+ }
+ .fourth .benefits-top .dis{
+  width:100% ;
+ }
+ .fourth .benefits-top{
+  gap: 20px;
+ }
+ .fourth .benefits-bot .benefit{
+  width: 100%;
+ }
+ .fifth .courses-top .dis{
+  width:100% ;
+ }
+ .fifth .courses-top{
+  gap: 20px;
+ }
+ .fifth .courses-bot .course{
+  width: 100%;
+ }
+ .fifth .courses-bot .course img{
+  width: 100%;
+ }
+ .fifth .courses-bot .course .git{
+  width: 100%;
+ }
+ .sixth .testimonials-top .dis{
+  width:100% ;
+ }
+ .sixth .testimonials-top{
+  gap: 20px;
+ }
+ .sixth .testimonials-bot .testimonials-dis{
+  width: 100%;
+ }
+ .sixth .testimonials-bot .testimonials-dis .test{
+  gap: 30px;
+ }
+ .seventh .pricing-top .dis{
+  width: 100%;
+ }
+ .seventh .pricing-top{
+  gap: 20px;
+ }
+
+}
+@media screen and (max-width:900px){
+.seventh .pricing-bot .plan{
+  width: 100%;
+ }
+ .seventh .pricing-bot .plan .get{
+  padding: 10px 30px;
+ }
+ .seventh .pricing-bot .plan .features .total .feature{
+  width: 250px;
+ }
+}
+@media screen and (max-width:1335px){
+  footer .container .top{
+    gap: 40px;
+  }
+}
+@media screen and (max-width:800px){
+  footer .container .top{
+    width: 100%;
+  }
+}
+
